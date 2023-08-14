@@ -21,7 +21,7 @@ public class Score : MonoBehaviour
 
     private void OnDisable()
     {
-        _player.OnScoreChanged += ChangeText;
+        _player.OnScoreChanged -= ChangeText;
     }
 
     private void ChangeText()
